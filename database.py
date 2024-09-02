@@ -9,7 +9,7 @@ from langchain.vectorstores.chroma import Chroma
 
 
 CHROMA_PATH = "chroma"
-DATA_PATH = "/Users/karanmaheshwari/Desktop/rag/data"
+DATA_PATH = "/Users/sarthakyadav/Desktop/Legal-Sathi/data"
 
 
 def main():
@@ -106,5 +106,5 @@ def clear_database():
         shutil.rmtree(CHROMA_PATH)
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
