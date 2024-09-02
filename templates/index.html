@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal Sathi</title>
     <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+
+    
 </head>
 <body>
-    <h1>Legal Sathi</h1>
-    <textarea id="query" rows="5" cols="50"></textarea><br>
-    <button onclick="submitQuery()">Submit Query</button>
-    <div id="response"></div>
+    <div class="container">
+        <div class="logo">
+            <span>Legal Sathi</span>
+        </div>
+        <div class="input-area">
+            <textarea id="query" rows="5" cols="50"></textarea>
+            <button onclick="submitQuery()">Submit Query</button>
+        </div>
+        <div id="response" class="message-area"></div>
+    </div>
 
     <script src="{{ url_for('static', path='/script.js') }}"></script>
 </body>
